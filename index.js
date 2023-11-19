@@ -12,10 +12,12 @@ let imgsrc = [
   'public/images/spade.png',
   'public/images/heart.png',
   'public/images/clubs.png',
-  'public/images/diamond .png'
+  'public/images/diamond .png',
+
 ]
 
 
+  
 for (var i = 0; i < suits.length; i++) {
   var row = document.createElement("tr");
   for (var j = 0; j < values.length; j++) {
@@ -36,9 +38,35 @@ for (var i = 0; i < suits.length; i++) {
     khal.classList.add("imgclass");
 
 
+
     cell.appendChild(khal);
+
+   
+
 
   }
 
   dark.appendChild(row);
 }
+
+
+
+let btn = document.getElementById("botton");
+let output= document.getElementById("output");
+
+function random (){
+ for (let n = 0; n <4; n++) {
+  let randomcard = Math.floor(Math.random()*deck.length)
+
+console.log(deck[randomcard])
+
+    }
+} 
+ 
+btn.addEventListener( 'click' ,() => {
+
+  innerHTML=random(deck)
+ 
+
+
+})

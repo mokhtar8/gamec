@@ -2,7 +2,9 @@
   width: 1200px;
   margin: 0 auto;
 }
-
+ div{
+  display: none;
+ }
 .card {
  
   text-align: center;
@@ -24,8 +26,24 @@
  
 }
 
-img{
+.img-khal{
   margin: 3px;
+  height: 124px;
   width: 92px;
   border: black solid 1px;
+}
+
+
+.khalkoochak{
+  position: absolute;
+  transform: rotate(181deg);
+  top: 246px;
+  right: 41px;
+}
+
+#botton {
+  background-color: #4cdc65;
+  width: 87px;
+  height: 38px;
+  border-radius: 13px;
 }
