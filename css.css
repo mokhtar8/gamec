@@ -2,13 +2,12 @@
   width: 1200px;
   margin: 0 auto;
 }
- div{
-  display: none;
- }
+
 .card {
- 
+  position: relative;
+  top: 38px;
   text-align: center;
-  font-size:16px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -16,17 +15,26 @@
   color: black;
 }
 
-.heart, .diamond {
+.heart,
+.diamond {
   color: red;
 }
 
-.imgclass {
-  width: 80px;
-  border: black solid 1px;
- 
+
+#body{
+  
 }
 
-.img-khal{
+/*images*/
+.imgclass {
+  width: 90px;
+  height: 144px;
+  border: black solid 1px;
+
+}
+
+.img-khal {
+
   margin: 3px;
   height: 124px;
   width: 92px;
@@ -34,12 +42,44 @@
 }
 
 
-.khalkoochak{
-  position: absolute;
-  transform: rotate(181deg);
-  top: 246px;
-  right: 41px;
+.topimg {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  left: 4px;
+  top: -123px;
 }
+
+.bottomimg {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  top: -49px;
+  left: 44px;
+  transform: rotate(178deg);
+
+}
+
+/*images*/
+
+/*numbers*/
+.topnumber {
+  position: relative;
+  top: 44px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.bottomnumber {
+  position: relative;
+  top: 145px;
+  font-size: 20px;
+  right: 9px;
+  transform: rotate(180deg);
+}
+
+/*numbers*/
+
 
 #botton {
   background-color: #4cdc65;
